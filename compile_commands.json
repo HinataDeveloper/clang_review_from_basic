@@ -1,0 +1,18 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-fsanitize=address,undefined",
+      "-o",
+      "bin/main",
+      "src/main.c"
+    ],
+    "directory": "/home/hinata/WorkSpace/clang/clang_001",
+    "file": "/home/hinata/WorkSpace/clang/clang_001/src/main.c",
+    "output": "/home/hinata/WorkSpace/clang/clang_001/bin/main"
+  }
+]
