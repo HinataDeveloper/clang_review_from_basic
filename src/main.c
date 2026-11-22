@@ -14,7 +14,7 @@ int main(void)
 	/* Encounter with error.
          * Because size of `string2[32]` is less than the relevant text. */
 	strcpy(string2,
-	       "I am a C developer and some ather languages such as C++ and Python");
+	       "I am a C developer and some other languages such as C++ and Python");
 
 	printf("value of string1 is: %s\n", string1);
 	printf("value of string2 is %s\n", string2);
