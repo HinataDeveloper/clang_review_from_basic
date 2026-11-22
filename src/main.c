@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
-	puts("\n The End ...\n");
-	return 0;
+	printf("Hello world!");
+
+	puts("\nThe End ...\n");
+	return EXIT_SUCCESS;
 }
