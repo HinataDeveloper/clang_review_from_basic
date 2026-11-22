@@ -8,7 +8,7 @@
 #   make clean        remove built binaries only (never touches src)
 
 CC      := gcc
-CFLAGS  := -Wall -Wextra -g -fsanitize=address,undefined
+CFLAGS  := -std=gnu23 -Wall -Wextra -g3 -fsanitize=address,undefined
 NAME    ?= main
 
 SRC_DIR := src

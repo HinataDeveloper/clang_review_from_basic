@@ -3,7 +3,11 @@
 
 int main(void)
 {
-	printf("Hello world!");
+	int a = 391;
+	int b = 179;
+	int c = 793;
+
+	bool d = a > b;
 
 	puts("\nThe End ...\n");
 	return EXIT_SUCCESS;

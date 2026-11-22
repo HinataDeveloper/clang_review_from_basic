@@ -2,6 +2,7 @@
   {
     "arguments": [
       "/usr/bin/gcc",
+      "-std=gnu23",
       "-c",
       "-Wall",
       "-Wextra",
@@ -11,8 +12,8 @@
       "bin/main",
       "src/main.c"
     ],
-    "directory": "/home/hinata/WorkSpace/clang/clang_001",
-    "file": "/home/hinata/WorkSpace/clang/clang_001/src/main.c",
-    "output": "/home/hinata/WorkSpace/clang/clang_001/bin/main"
+    "directory": "/home/hinata/WorkSpace/github/clang_review_from_basic",
+    "file": "/home/hinata/WorkSpace/github/clang_review_from_basic/src/main.c",
+    "output": "/home/hinata/WorkSpace/github/clang_review_from_basic/bin/main"
   }
 ]
