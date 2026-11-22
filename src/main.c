@@ -1,24 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
+typedef unsigned int uint;
 
 int main(void)
 {
-	char ch;
-	char name[32];
-	char family[32];
+	char string1[32];
+	char string2[32];
 
-	printf("enter a charachter: ");
-	ch = getchar();
+	strcpy(string1, "I am a Rustacean ...");
+	strcpy(string2, "I am a C developer ...");
 
-	printf("enter your name: ");
-	scanf("%31s", name);
+	printf("value of string1 is: %s\n", string1);
+	printf("value of string2 is %s\n", string2);
 
-	printf("enter your family: ");
-	scanf("%31s", family);
+	uint length_one = (uint)strlen(string1);
+	uint length_two = (uint)strlen(string2);
 
-	printf("The charater you typed is: %c", ch);
-	printf("The name you typed is: %s\n", name);
-	printf("The family you typed is: %s\n", family);
+	printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+	printf("length of the string1 is: %u\n", length_one);
+	printf("length of the string2 is: %u\n", length_two);
 
 	puts("\nThe End ...\n");
 	return EXIT_SUCCESS;
