@@ -10,7 +10,11 @@ int main(void)
 	char string2[32];
 
 	strcpy(string1, "I am a Rustacean ...");
-	strcpy(string2, "I am a C developer ...");
+
+	/* Encounter with error.
+         * Because size of `string2[32]` is less than the relevant text. */
+	strcpy(string2,
+	       "I am a C developer and some ather languages such as C++ and Python");
 
 	printf("value of string1 is: %s\n", string1);
 	printf("value of string2 is %s\n", string2);
