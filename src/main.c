@@ -7,16 +7,13 @@ typedef unsigned int Bool;
 
 int main(void)
 {
-	uint a = 23;
-	uint b = 39;
-	Bool c = a > b;
+	char message_one[32] = "I am a Rustacen ...";
+	char message_two[64] =
+		"Not only I am a Rustacean I am a C developer as well";
 
-	ldbl x = 36.3698;
-	ldbl y = 56.32569;
-	ldbl z = x / y;
-
-	printf("value of c is: %u\n", c);
-	printf("value of z is: %Lf\n", z);
+	printf("the content of message_one is:\n%s\n", message_one);
+	printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf("the content of message_two is:\n%s\n", message_two);
 
 	puts("\nThe End ...\n");
 	return EXIT_SUCCESS;
