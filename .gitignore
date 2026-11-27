@@ -1,7 +1,9 @@
 # folders
+
 bin
 debug
 target
+out
 
 # Prerequisites
 *.d
