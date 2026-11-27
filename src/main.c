@@ -1,31 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 typedef unsigned int uint;
 
 int main(void)
 {
-	char string1[32];
-	char string2[32];
+	int value_one;
+	int value_two;
+	int value_three;
+	int value_four;
+	int value_five;
 
-	strcpy(string1, "I am a Rustacean ...");
+	printf("value_one: (Good = 1  Bad = 0): ");
+	scanf("%d", &value_one);
+	puts("");
 
-	/* Encounter with error.
-         * Because size of `string2[32]` is less than the relevant text. */
-	strcpy(string2,
-	       "I am a C developer and some other languages such as C++ and Python");
+	printf("value_two: (Good = 1  Bad = 0): ");
+	scanf("%d", &value_two);
+	puts("");
 
-	printf("value of string1 is: %s\n", string1);
-	printf("value of string2 is %s\n", string2);
+	printf("value_three: (Good = 1  Bad = 0): ");
+	scanf("%d", &value_three);
+	puts("");
 
-	uint length_one = (uint)strlen(string1);
-	uint length_two = (uint)strlen(string2);
+	printf("value_four: (Good = 1  Bad = 0): ");
+	scanf("%d", &value_four);
+	puts("");
 
-	printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	printf("value_five: (Good = 1  Bad = 0): ");
+	scanf("%d", &value_five);
+	puts("");
 
-	printf("length of the string1 is: %u\n", length_one);
-	printf("length of the string2 is: %u\n", length_two);
+	int decision = (value_one && (value_two || value_three) &&
+			(value_four || value_five));
+
+	printf("Decision is: %d\n", decision);
 
 	puts("\nThe End ...\n");
 	return EXIT_SUCCESS;
