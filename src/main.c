@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef unsigned int uint;
 
 int main(void)
 {
