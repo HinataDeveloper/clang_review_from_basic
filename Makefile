@@ -14,7 +14,7 @@
 #   make clean          remove built files only (never touches src)
 
 CC      := gcc
-CFLAGS  := -std=gnu23 -Wall -Wextra -g3 -fsanitize=address,undefined
+CFLAGS  := -std=gnu23 -Wall -Wextra -g3 -fsanitize=address,undefined -lm
 NAME    ?= main
 
 SRC_DIR := src
